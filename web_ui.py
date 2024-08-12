@@ -20,7 +20,7 @@ def inject_custom_css():
     )
 
 def sidebar():
-    selection = st.sidebar.radio('Go to', 
+    selection = st.sidebar.radio('Projects', 
                                  ['Portfolio', 'Realtime Customer Counting', 'DentAI', 'Drivable Area Segmentation', 'Turtlebot3 Ros Object Detection', 'Behavioral Clonning Model'])
 
     if selection == 'Portfolio':
