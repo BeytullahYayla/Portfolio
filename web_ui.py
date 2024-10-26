@@ -36,7 +36,7 @@ def sidebar():
         img = ""  # You can add a fallback image or a placeholder here
     
     try:
-        with open(os.path.join(ASSETS_PATH, "Beytullah Yayla Resume EN.pdf"), "rb") as pdf_file:
+        with open(os.path.join(ASSETS_PATH, "Beytullah Yayla Resume  EN .pdf"), "rb") as pdf_file:
             pdf_bytes = pdf_file.read()
     except FileNotFoundError:
         pdf_bytes = None  # Handle this appropriately if the file is missing
@@ -80,7 +80,7 @@ def sidebar():
         for platform in social_icons_data
     ]
     
-    st.sidebar.write("Junior Data Scientist And AI Enthusiast")
+    st.sidebar.write("Artifical Inteligence Engineer")
     st.sidebar.write(f"""
     <div style="display: flex; justify-content: center; margin-bottom: 20px;">
         {''.join(social_icons_html)}
@@ -91,7 +91,7 @@ def sidebar():
     
     # Download CV button
     if pdf_bytes:
-        st.sidebar.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="Beytullah Yayla CV.pdf", mime="application/pdf",)
+        st.sidebar.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="Beytullah Yayla Resume  EN .pdf", mime="application/pdf",)
     else:
         st.sidebar.write("CV is currently unavailable.")
     
