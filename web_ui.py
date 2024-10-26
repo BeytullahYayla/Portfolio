@@ -49,7 +49,7 @@ def sidebar():
             transform: rotate(0deg);
         }}
         50% {{
-            transform: rotate(5deg);
+            transform: rotate(0deg);
         }}
     }}
     .box img {{
@@ -79,14 +79,15 @@ def sidebar():
         f" style='width: 25px; height: 25px;'></a>"
         for platform in social_icons_data
     ]
-    
-    st.sidebar.write("Artifical Inteligence Engineer")
+
     st.sidebar.write(f"""
     <div style="display: flex; justify-content: center; margin-bottom: 20px;">
         {''.join(social_icons_html)}
     </div>""", 
     unsafe_allow_html=True)
-    
+
+    st.sidebar.divider()
+    st.sidebar.write("I am passionate about solving complex problems and leveraging the power of technology across various fields, including computer vision, image processing, natural language processing (NLP), generative AI, and backend development.")
     st.sidebar.divider()
     
     # Download CV button
